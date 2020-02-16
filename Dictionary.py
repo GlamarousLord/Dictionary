@@ -10,18 +10,17 @@ def find_Meaning():
     meaning = str( dictionary.printMeanings())
     print(meaning)    
 
-def find_Synonym():
-    word=ent.get()
-    print("Synonym is ")
-    dictionary= PyDictionary(word)
-    print(dictionary.synonym(word))
-
 def find_Antonym():
     word=ent.get()
     print("Antonym is ")
     dictionary= PyDictionary(word)
     print(dictionary.antonym(word))    
         
+def find_Synonym():
+    word=ent.get()
+    print("Synonym is ")
+    dictionary= PyDictionary(word)
+    print(dictionary.synonym(word))
     
 ent = Entry(ab, font=("times", 17))
 ent.grid(row=2,column=2)
